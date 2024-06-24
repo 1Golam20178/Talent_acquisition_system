@@ -10,7 +10,7 @@
 </head>
 <body>
     
-    <nav class=" text-1xl text-white font-bold text-center bg-amber-400 w-12/12 mx-auto p-6">
+    <nav class=" text-1xl text-white font-bold text-center bg-blue-950 w-12/12 mx-auto p-2">
         <ul class="nav-upper">
             <li class="nav_list">
                 <a href="index1.html" 
@@ -33,11 +33,11 @@
         </ul>
     
         </nav>
-        <div class="flex justify-between w-11/12" >
-            <div><h1 class=" text-4xl font-bold ">icddr,b</h1></div>
- <div><h1 class="text-green-400 text-4xl">Talent Acquisition System</h1></div>
+        <div class="flex justify-between w-11/12 mb-6 mt-6" >
+            <div><h1 class=" text-gray-500 text-4xl font-bold ">icddr,b</h1></div>
+ <div><h1 class=" text-sky-500 text-3xl">Talent Acquisition System</h1></div>
 </div>
-<h1 class=" text-1xl text-white font-bold text-left bg-green-400 w-11/12  p-2">
+<h1 class=" text-1xl text-white font-bold text-left bg-sky-700 w-11/12  p-2">
     Register with e-Recruitment
 
 </h1>
@@ -51,15 +51,22 @@ Mark denotes mandatory field - You must provide required information.
     Do not create multiple account - Your account will be suspended, if duplicate found.
     </p>
     <form action="connect.php" method="POST" >
-        <div class="text-center bg-green-400 w-11/12 ">
-            <h3  class="text-1xl font-semibold ">Email<span style="color:red;">*</span></h3>
-            <input class="w-9/12 block mb-2 px-3" id="email"name="email1" type="email" placeholder="Your email">
-            <h3 class="text-1xl font-semibold ">Password<span style="color:red;">*</span></h3>
-            <input class="w-9/12 block mb-2 px-3" id="password"name="password1" type="password" placeholder="Your password">
-       
-            <h3 class="text-1xl font-semibold ">Conform Password<span style="color:red;">*</span></h3>
-            <input class="w-9/12 block mb-2 px-3" id="password2" class ="password2"type="password" placeholder="Conform password">
-            <h3 class="text-1xl font-semibold ">Type<span style="color:red;">*</span></h3><br>
+        <div class="mx-12 ">
+            <div class="flex justify-center  ">
+            <h3  class="text-1xl mx-5  font-semibold ">Email<span style="color:red;">*</span></h3>
+
+            <input class="w-4/12 mb-2 px-3 " id="email"name="email1" type="email" placeholder="Your email">
+        </div>
+        <div class="flex justify-center mt-4 ">
+            <h3 class="text-1xl mx-5  font-semibold ">Password<span style="color:red;">*</span></h3>
+            <input class="w-4/12  mb-2 px-3" id="password"name="password1" type="password" placeholder="Your password">
+        </div>
+        <div class="flex justify-center mt-4 ">
+            <h3 class="text-1xl mx-5 font-semibold ">Conform Password<span style="color:red;">*</span></h3>
+            <input class="w-4/12 block mb-2 px-3" id="password2" class ="password2"type="password" placeholder="Conform password">
+        </div>
+        <div class="flex justify-center mt-4 ">
+            <h3 class="text-1xl mx-5 mr-10 mr-10 font-semibold ">Title<span style="color:red;">*</span></h3><br>
 
        
        <select name="Select title" >
@@ -71,24 +78,29 @@ Mark denotes mandatory field - You must provide required information.
         
        </select>
 
-  
-<br>
-
-            <h3 class="text-1xl font-semibold mt-3 ">First Name<span style="color:red;">*</span></h3>
-            <input class="w-9/12 block mb-2 px-3"name="fname" id="firstName" type="text" placeholder="Give Your first name as like NID">
-            <h3 class="text-1xl font-semibold ">Middle Name<span style="color:red;">*</span></h3>
-            <input class="w-9/12 block mb-2 px-3"name="mname" id="middleName" type="text" placeholder="Give Your middlr name as like NID">
-            <h3 class="text-1xl font-semibold ">Last Name<span style="color:red;">*</span></h3>
-            <input class="w-9/12 block mb-2 px-3" name="lname" id="lastName" type="text" placeholder="Give Your last name as like NID">
-            <h3 class="text-1xl font-semibold ">Date of birth<span style="color:red;">*</span></h3>
-            <input class="w-9/12 block mb-2 px-3" id="birth" type="date" placeholder="">
-           
-       
-            <button id="signUp" class="bg-amber-500 hover:bg-sky-600 px-6 py-2 mt-10 text-white font-medium rounded-lg">Sign up</button>
-           
+</div> 
+<div class="flex justify-center mt-4 ">
+            <h3 class="text-1xl mx-5 font-semibold ">First Name<span style="color:red;">*</span></h3>
+            <input class="w-4/12 block mb-2 px-3"name="fname" id="firstName" type="text" placeholder="Give Your first name as like NID">
         </div>
+        <div class="flex justify-center mt-4 ">
+            <h3 class="text-1xl mx-5 font-semibold ">Middle Name<span style="color:red;">*</span></h3>
+            <input class="w-4/12 block mb-2 px-3"name="mname" id="middleName" type="text" placeholder="Give Your middlr name as like NID">
+            </div>
+            <div class="flex justify-center mt-4 ">
+            <h3 class="text-1xl mx-5 font-semibold ">Last Name<span style="color:red;">*</span></h3>
+            <input class="w-4/12 block mb-2 px-3" name="lname" id="lastName" type="text" placeholder="Give Your last name as like NID">
+        </div>
+        <div class="flex justify-center mt-4 ">
+            <h3 class="text-1xl mx-5 font-semibold ">Date of birth<span style="color:red;">*</span></h3>
+            <input class="w-4/12 block mb-2 px-3" id="birth" type="date" placeholder="">
+            
+        </div>
+        <div class="items-center">
+        <button id="signUp" class=" items-center bg-sky-700 content-center hover:bg-sky-400 px-4 py-2 text-white font-medium rounded-lg">Sign up</button>
+        </div>
+    </div>
     </form>
-    
         <script src="js/signUp.js"></script>
 </body>
 </html>
