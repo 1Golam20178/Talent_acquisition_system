@@ -50,12 +50,12 @@ Mark denotes mandatory field - You must provide required information.
     *</span>
     Do not create multiple account - Your account will be suspended, if duplicate found.
     </p>
-    <form action="connect.php" method="POST" >
+    <form action="connect.php" method="POST">
         <div class="mx-12 ">
-            <div class="flex justify-center  ">
-            <h3  class="text-1xl mx-5  font-semibold ">Email<span style="color:red;">*</span></h3>
+            <div class="flex justify-center">
+            <h3  class="text-1xl mx-5 font-semibold ">Email<span style="color:red;">*</span></h3>
 
-            <input class="w-4/12 mb-2 px-3 " id="email"name="email1" type="email" placeholder="Your email">
+            <input class=" w-4/12 mb-2 px-3" id="email"name="email1" type="email" placeholder="Your email">
         </div>
         <div class="flex justify-center mt-4 ">
             <h3 class="text-1xl mx-5  font-semibold ">Password<span style="color:red;">*</span></h3>
@@ -66,15 +66,13 @@ Mark denotes mandatory field - You must provide required information.
             <input class="w-4/12 block mb-2 px-3" id="password2" class ="password2"type="password" placeholder="Conform password">
         </div>
         <div class="flex justify-center mt-4 ">
-            <h3 class="text-1xl mx-5 mr-10 mr-10 font-semibold ">Title<span style="color:red;">*</span></h3><br>
-
-       
-       <select name="Select title" >
+            <h3 class="text-1xl mx-1  font-semibold  ">Title<span style="color:red;">*</span></h3><br>
+       <select name="Select title" class="mx-20">
         <option value="Select title">Select title</option>
         <option value="Mr.">Mr.</option>
         <option value="Ms.">Ms.</option>
         <option value="Dr.">Dr.</option>
-        <option value="Prof.">prof.</option>
+        <option value="Prof.">Prof.</option>
         
        </select>
 
@@ -96,9 +94,9 @@ Mark denotes mandatory field - You must provide required information.
             <input class="w-4/12 block mb-2 px-3" id="birth" type="date" placeholder="">
             
         </div>
-        <div class="items-center">
-        <button id="signUp" class=" items-center bg-sky-700 content-center hover:bg-sky-400 px-4 py-2 text-white font-medium rounded-lg">Sign up</button>
-        </div>
+        <div class="flex justify-center">
+            <button class="bg-sky-900 text-white hover:bg-blue-400 font-bold py-1 px-2 mt-3 rounded items-center rounded">Learn More</button>
+          </div>
     </div>
     </form>
         <script src="js/signUp.js"></script>
