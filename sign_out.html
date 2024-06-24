@@ -7,6 +7,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" href="index1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
 </head>
 <body>
     
@@ -33,8 +35,9 @@
         </ul>
     
         </nav>
+       
         <div class="flex justify-between w-11/12 mb-6 mt-6" >
-            <div><h1 class=" text-gray-500 text-4xl font-bold ">icddr,b</h1></div>
+            <div> <img class="object-cover h-25 w-20  h-10 w-10 " src="https://static.youthop.com/uploads/sites/2/2019/09/icddrb-logo-1563201864849.jpg"></div>
  <div><h1 class=" text-sky-500 text-3xl">Talent Acquisition System</h1></div>
 </div>
 <h1 class=" text-1xl text-white font-bold text-left bg-sky-700 w-11/12  p-2">
@@ -50,24 +53,26 @@ Mark denotes mandatory field - You must provide required information.
     *</span>
     Do not create multiple account - Your account will be suspended, if duplicate found.
     </p>
-    <form action="connect.php" method="POST">
+    <form action="connect.php" method="POST" class="text-align-center">
+       
         <div class="mx-12 ">
-            <div class="flex justify-center">
-            <h3  class="text-1xl mx-5 font-semibold ">Email<span style="color:red;">*</span></h3>
+            <div class="flex justify-center mx-14">
+            <label  class="text-1xl mx-5 font-semibold text-align:center pt-120px">Email<span style="color:red;">*</span></label>
 
             <input class=" w-4/12 mb-2 px-3" id="email"name="email1" type="email" placeholder="Your email">
         </div>
-        <div class="flex justify-center mt-4 ">
+        <div class="flex justify-center mt-4 mx-4 ">
             <h3 class="text-1xl mx-5  font-semibold ">Password<span style="color:red;">*</span></h3>
             <input class="w-4/12  mb-2 px-3" id="password"name="password1" type="password" placeholder="Your password">
         </div>
-        <div class="flex justify-center mt-4 ">
-            <h3 class="text-1xl mx-5 font-semibold ">Conform Password<span style="color:red;">*</span></h3>
+        <div class="flex justify-center mt-4 mx-2">
+            <h3 class="text-1xl mx-5 font-semibold ">Password1<span style="color:red;">*</span></h3>
             <input class="w-4/12 block mb-2 px-3" id="password2" class ="password2"type="password" placeholder="Conform password">
         </div>
-        <div class="flex justify-center mt-4 ">
-            <h3 class="text-1xl mx-1  font-semibold  ">Title<span style="color:red;">*</span></h3><br>
-       <select name="Select title" class="mx-20">
+        <div class="flex justify-center mt-4 mx-2">
+            <h3 class="text-1xl  mx-5   font-semibold  ">Title<span style="color:red;">*</span></h3><br>
+
+       <select name="Select title" class="w-4/12  mb-2 mx-5 px-3">
         <option value="Select title">Select title</option>
         <option value="Mr.">Mr.</option>
         <option value="Ms.">Ms.</option>
@@ -77,28 +82,29 @@ Mark denotes mandatory field - You must provide required information.
        </select>
 
 </div> 
-<div class="flex justify-center mt-4 ">
+<div class="flex justify-center mt-4 mx-2">
             <h3 class="text-1xl mx-5 font-semibold ">First Name<span style="color:red;">*</span></h3>
             <input class="w-4/12 block mb-2 px-3"name="fname" id="firstName" type="text" placeholder="Give Your first name as like NID">
         </div>
-        <div class="flex justify-center mt-4 ">
-            <h3 class="text-1xl mx-5 font-semibold ">Middle Name<span style="color:red;">*</span></h3>
-            <input class="w-4/12 block mb-2 px-3"name="mname" id="middleName" type="text" placeholder="Give Your middlr name as like NID">
+        <div class="flex justify-center mt-4 mx-4 ">
+            <h3 class="text-1xl mx-5 font-semibold ">Mid Name<span style="color:red;">*</span></h3>
+            <input class="w-4/12 block mb-2 px-3"name="mname" id="middleName" type="text" placeholder="Give Your middle name as like NID">
             </div>
-            <div class="flex justify-center mt-4 ">
+            <div class="flex justify-center mt-4 mx-4 ">
             <h3 class="text-1xl mx-5 font-semibold ">Last Name<span style="color:red;">*</span></h3>
             <input class="w-4/12 block mb-2 px-3" name="lname" id="lastName" type="text" placeholder="Give Your last name as like NID">
         </div>
-        <div class="flex justify-center mt-4 ">
+        <div class="flex justify-center mt-4  ">
             <h3 class="text-1xl mx-5 font-semibold ">Date of birth<span style="color:red;">*</span></h3>
-            <input class="w-4/12 block mb-2 px-3" id="birth" type="date" placeholder="">
+            <input class="w-4/12 block mb-2 px-3 text-gray-500" id="birth" type="date" placeholder="">
             
         </div>
         <div class="flex justify-center">
-            <button class="bg-sky-900 text-white hover:bg-blue-400 font-bold py-1 px-2 mt-3 rounded items-center rounded">Learn More</button>
+            <button class="bg-sky-900 text-white hover:bg-blue-400 font-bold py-1 px-2 mt-3 rounded items-center rounded-full">Submit</button>
           </div>
     </div>
     </form>
+    
         <script src="js/signUp.js"></script>
 </body>
 </html>
