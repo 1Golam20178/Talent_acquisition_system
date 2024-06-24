@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+    
+    <nav class=" text-1xl text-white font-bold text-center bg-amber-400 w-12/12 mx-auto p-6">
+        <ul class="nav-upper">
+            <li class="nav_list">
+                <a href="index1.html" 
+                class="nav_link">Current Opportunities</a>
+            
+            <li class="nav_list">
+                <a href="about.html" 
+                class="nav_link">About icddr,b</a>
+            </li>   <li class="nav_list">
+                <a href="apply.html" 
+                class="nav_link">How to apply</a>
+            </li>   <li class="nav_list">
+                <a href="sign_in.html" 
+                class="nav_link">Sign in</a>
+            </li>
+            <li class="nav_list">
+                <a href="sign_out.html" 
+                class="nav_link">Sign Up</a>
+            </li>
+        </ul>
+    
+        </nav>
+        <div class="flex justify-between w-11/12" >
+            <div><h1 class=" text-4xl font-bold ">icddr,b</h1></div>
+ <div><h1 class="text-green-400 text-4xl">Talent Acquisition System</h1></div>
+</div>
+<h1 class=" text-1xl text-white font-bold text-left bg-green-400 w-11/12  p-2">
+    Register with e-Recruitment
+
+</h1>
+
+<p class="text-red-500 mt-5 text-center"><span style="color:red;">
+*</span>
+Mark denotes mandatory field - You must provide required information.
+</p>
+<p class="text-red-500 text-center mb-6"><span style="color:red;">
+    *</span>
+    Do not create multiple account - Your account will be suspended, if duplicate found.
+    </p>
+    <form action="connect.php" method="POST" >
+        <div class="text-center bg-green-400 w-11/12 ">
+            <h3  class="text-1xl font-semibold ">Email<span style="color:red;">*</span></h3>
+            <input class="w-9/12 block mb-2 px-3" id="email"name="email1" type="email" placeholder="Your email">
+            <h3 class="text-1xl font-semibold ">Password<span style="color:red;">*</span></h3>
+            <input class="w-9/12 block mb-2 px-3" id="password"name="password1" type="password" placeholder="Your password">
+       
+            <h3 class="text-1xl font-semibold ">Conform Password<span style="color:red;">*</span></h3>
+            <input class="w-9/12 block mb-2 px-3" id="password2" class ="password2"type="password" placeholder="Conform password">
+            <h3 class="text-1xl font-semibold ">Type<span style="color:red;">*</span></h3><br>
+
+       
+       <select name="Select title" >
+        <option value="Select title">Select title</option>
+        <option value="Mr.">Mr.</option>
+        <option value="Ms.">Ms.</option>
+        <option value="Dr.">Dr.</option>
+        <option value="Prof.">prof.</option>
+        
+       </select>
+
+  
+<br>
+
+            <h3 class="text-1xl font-semibold mt-3 ">First Name<span style="color:red;">*</span></h3>
+            <input class="w-9/12 block mb-2 px-3"name="fname" id="firstName" type="text" placeholder="Give Your first name as like NID">
+            <h3 class="text-1xl font-semibold ">Middle Name<span style="color:red;">*</span></h3>
+            <input class="w-9/12 block mb-2 px-3"name="mname" id="middleName" type="text" placeholder="Give Your middlr name as like NID">
+            <h3 class="text-1xl font-semibold ">Last Name<span style="color:red;">*</span></h3>
+            <input class="w-9/12 block mb-2 px-3" name="lname" id="lastName" type="text" placeholder="Give Your last name as like NID">
+            <h3 class="text-1xl font-semibold ">Date of birth<span style="color:red;">*</span></h3>
+            <input class="w-9/12 block mb-2 px-3" id="birth" type="date" placeholder="">
+           
+       
+            <button id="signUp" class="bg-amber-500 hover:bg-sky-600 px-6 py-2 mt-10 text-white font-medium rounded-lg">Sign up</button>
+           
+        </div>
+    </form>
+    
+        <script src="js/signUp.js"></script>
+</body>
+</html>

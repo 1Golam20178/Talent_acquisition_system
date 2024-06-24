@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="index1.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class=" text-1xl text-white font-bold text-center bg-amber-400 w-12/12 mx-auto p-6">
+        <ul class="nav-upper">
+            <li class="nav_list">
+                <a href="index1.html" 
+                class="nav_link">Current Opportunities</a>
+            
+            <li class="nav_list">
+                <a href="about.html" 
+                class="nav_link">About icddr,b</a>
+            </li>   <li class="nav_list">
+                <a href="apply.html" 
+                class="nav_link">How to apply</a>
+            </li>   <li class="nav_list">
+                <a href="sign_in.html" 
+                class="nav_link">Sign in</a>
+            </li>
+            <li class="nav_list">
+                <a href="sign_out.html" 
+                class="nav_link">Sign Up</a>
+            </li>
+        </ul>
+    
+        </nav>
+        <div class="flex justify-between w-11/12" >
+            <div><h1 class=" text-4xl font-bold ">icddr,b</h1></div>
+ <div><h1 class="text-green-400 text-4xl">Talent Acquisition System</h1></div>
+</div>
+<h1 class=" text-1xl text-white font-bold text-left bg-green-400 w-11/12  p-2">
+    Provide your credentials
+
+<form action="insert.php"
+ method="POST">
+        <div class="text-center">
+            <h3 class="text-1xl font-semibold ">Email<span style="color:red;">*</span></h3>
+            <input class="w-9/12 block mb-2 px-3 text-black" id="user-email" name="email" required  type="email" placeholder="Your email">
+            <h3 class="text-1xl font-semibold ">Password<span style="color:red;">*</span></h3>
+            <input class="w-9/12 block mb-2 px-3 text-black" id="user-password"name="password" required type="password" placeholder="Your password">
+       <button id="singin" class="bg-amber-500 hover:bg-sky-600 px-6 py-2 mt-10 text-white font-medium rounded-lg">Login</button>
+       
+        </div>
+    </form>
+        <i class="fa-brands fa-square-facebook"></i>
+        <script src="js/signin.js"></script>
+</body>
+</html>
